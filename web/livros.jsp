@@ -3,7 +3,6 @@
     Created on : 14/02/2017, 20:08:03
     Author     : Augusto
 --%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@include file="header.jsp" %>
 <!DOCTYPE html>
@@ -18,12 +17,28 @@
     <body>
       <div class="container">
       <div class="jumbotron">
-        <h1>Sistema BookTruck</h1>
-        <p>O módulo de edição de livros ainda não foi implementado.</p>
-        <p>Em construção</p>
-        <p>
-          <a class="btn btn-lg btn-primary" href="../../components/#navbar" role="button">View navbar docs &raquo;</a>
-        </p>
+        <div class="col-sm-10">
+            <form>
+                <p>
+                    Procurar por: <input type="text" name="procurar_por" 
+                                        value="<%= request.getParameter("procurar_por")==null?"":request.getParameter("procurar_por") %>" />
+                    <select name="procurar_em">
+                        <option <%= "Nome".equals(request.getParameter("procurar_em"))?"selected":"" %>>Nome</option>
+                        <option <%= "Autor".equals(request.getParameter("procurar_em"))?"selected":"" %>>Autor</option>
+                        <option <%= "Editora".equals(request.getParameter("procurar_em"))?"selected":"" %>>Editora</option>
+                    </select>
+                    <input type="submit" value="Procurar" />
+                </p>
+            </form>
+        </div>
+        
+        <div class='col-sm-2'>
+            <form action="cadastrar_livro.jsp">
+                  <p><input type="submit" value="Cadastrar" class='btn btn-primary' /></p>
+            </form>
+        </div>
+        
+        <div>FAZER TABELA DA LISTAGEM</div>
       </div>
       </div>
     </body>
