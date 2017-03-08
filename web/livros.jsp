@@ -27,18 +27,18 @@
                         <option <%= "Autor".equals(request.getParameter("procurar_em"))?"selected":"" %>>Autor</option>
                         <option <%= "Editora".equals(request.getParameter("procurar_em"))?"selected":"" %>>Editora</option>
                     </select>
-                    <input type="submit" value="Procurar" />
+                    <input type="submit" value="Procurar" class='btn btn-primary'/>
                 </p>
             </form>
         </div>
         
         <div class='col-sm-2'>
-            <form action="cadastrar_livro.jsp">
+            <form action="formLivro.jsp">
                   <p><input type="submit" value="Cadastrar" class='btn btn-primary' /></p>
             </form>
         </div>
         
-        <div>FAZER TABELA DA LISTAGEM</div>
+        <!--<div>FAZER TABELA DA LISTAGEM</div>-->
       </div>
       </div>
     </body>
