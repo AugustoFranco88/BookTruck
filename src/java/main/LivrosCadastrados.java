@@ -5,6 +5,7 @@
  */
 package main;
 
+import booktruck.models.Livro;
 import java.util.ArrayList;
 
 /**
