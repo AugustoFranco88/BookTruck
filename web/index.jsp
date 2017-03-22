@@ -6,10 +6,8 @@
 
 <%@page contentType="text/html" pageEncoding="UTF-8" %>
 
-<%@include file="inicial.jsp" %>
-<% String s = "uia o teste"; %>
+<%@include file="login.jsp" %>
     <body>
-        <!--<h1>Hello World! <%= s%></h1>
-        <li class="glyphicon glyphicon-camera" />-->
+        
     </body>
 </html>
