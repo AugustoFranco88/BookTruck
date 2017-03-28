@@ -31,6 +31,7 @@ public class UsuariosDAO {
     private Usuario makeFromResultSet(ResultSet rs) throws SQLException{
         
         Usuario u = new Usuario();
+        rs.next();
         u.setNome(rs.getString("usuario"));
         u.setSenha(rs.getString("senha"));
         return u;
@@ -46,7 +47,9 @@ public class UsuariosDAO {
         
         st.setString(1, login);
         
-        ResultSet rs = st.executeQuery(query);
+        ResultSet rs = st.executeQuery();
+        
+        
         
         return makeFromResultSet(rs);
         

@@ -4,6 +4,7 @@
     Author     : Augusto
 --%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@include file="verificarLogin.jsp" %>
 <%@include file="menu.jsp" %>
 <!DOCTYPE html>
 <html>

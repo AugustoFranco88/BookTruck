@@ -42,9 +42,14 @@ public class fazerLogin extends HttpServlet {
             Usuario u = dao.getByLogin(request.getParameter("usuario"));
             if(u.getSenha().equals(request.getParameter("senha"))){
                 
+                request.getSession().setAttribute("user", u);
                 response.sendRedirect("contato.jsp");
                 
-            };
+            }else{
+                
+                request.getSession().removeAttribute("user");
+                
+            }
             
         } catch (NoResultException e){
             
