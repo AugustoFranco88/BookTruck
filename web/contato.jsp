@@ -21,7 +21,8 @@
       <div class="jumbotron">
         <h1>Sistema BookTruck</h1>
         <p>Augusto Franco - Desenvolvedor - augustofrancosm@gmail.com</p>
-        <p>Em construção</p>
+        <p>Felipe Harlen - Desenvolvedor - felipeharlen@outlook.com</p>
+        <p>Em construção...</p>
         <p>
           <a class="btn btn-lg btn-primary" href="../../components/#navbar" role="button">View navbar docs &raquo;</a>
         </p>
