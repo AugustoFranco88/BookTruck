@@ -43,11 +43,13 @@ public class fazerLogin extends HttpServlet {
             if(u.getSenha().equals(request.getParameter("senha"))){
                 
                 request.getSession().setAttribute("user", u);
-                response.sendRedirect("contato.jsp");
+                response.sendRedirect("inicial.jsp");
                 
             }else{
                 
-                request.getSession().removeAttribute("user");
+                request.getSession().removeAttribute("user");              
+
+                response.sendRedirect("erro.jsp");
                 
             }
             
