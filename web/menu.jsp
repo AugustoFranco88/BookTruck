@@ -29,6 +29,7 @@
                     <div id="navbar" class="navbar-collapse collapse">
                         <ul class="nav navbar-nav">
                             <li><a href="usuarios.jsp">Usuários</a></li>
+                            <li><a href="formUsuarios.jsp">Cadastrar</a></li>
                             <li><a href="livros.jsp">Livros</a></li>
                             <li><a href="locais.jsp">Locais</a></li>
                             <li><a href="sobre.jsp">Sobre</a></li>

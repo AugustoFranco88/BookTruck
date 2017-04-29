@@ -8,7 +8,6 @@ package servlets;
 import DAO.UsuariosDAO;
 import booktruck.models.Usuario;
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -47,9 +46,8 @@ public class fazerLogin extends HttpServlet {
                 
             }else{
                 
-                request.getSession().removeAttribute("user");              
-
-                response.sendRedirect("erro.jsp");
+                request.getSession().removeAttribute("user");
+                response.sendRedirect("loginErro.jsp");
                 
             }
             

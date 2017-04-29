@@ -12,7 +12,7 @@ package booktruck.models;
 public class Usuario {
     
     private int Id;
-    private String nome, senha;
+    private String nome, senha, email;
 
     public void setId(int Id) {
         this.Id = Id;
@@ -25,6 +25,10 @@ public class Usuario {
     public void setSenha(String senha) {
         this.senha = senha;
     }
+    
+    public void setEmail(String email){
+        this.email = email;
+    }
 
     public int getId() {
         return Id;
@@ -36,6 +40,10 @@ public class Usuario {
 
     public String getSenha() {
         return senha;
+    }
+    
+    public String getEmail(){
+        return email;
     }
     
 }
