@@ -47,7 +47,7 @@ public class fazerLogin extends HttpServlet {
             }else{
                 
                 request.getSession().removeAttribute("user");
-                response.sendRedirect("loginErro.jsp");
+                response.sendRedirect("erro.jsp");
                 
             }
             
